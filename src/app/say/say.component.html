@@ -1,0 +1,14 @@
+<h2>Hello App</h2>
+
+<div>
+    <label>Say hello to</label>
+    <input [(ngModel)]="inputValue">
+    <button (click)="onSaveName()">OK</button>
+    <button (click)="onClearName()">Clear</button>
+</div>
+
+<div>
+  <h2 *ngIf="nameValue">
+    Hello {{ nameValue }}!
+  </h2>
+</div>
